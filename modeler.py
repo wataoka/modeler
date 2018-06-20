@@ -45,6 +45,8 @@ class Modeler():
             無し
         """
 
+        (x_train, y_train), (x_test, y_test) = data
+
         for model in self.models:
             model.summary()
             model.fit(x_train, y_train,

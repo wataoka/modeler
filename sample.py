@@ -55,7 +55,6 @@ if __name__ == "__main__":
     modeler.add(model1)
     modeler.add(model2)
     modeler.add(model3)
-    modeler.start(x_train, y_train,
-                  x_test, y_test,
-                  epochs=1)
-    modeler.save()
+    modeler.start(data,
+                  epochs=12)
+    modeler.save(n_save=1)
