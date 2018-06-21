@@ -53,7 +53,7 @@ class Modeler():
                       batch_size=batch_size,
                       epochs=epochs,
                       verbose=verbose)
-            self.models[model] = model.evaluate(x_test, y_test)[0]
+            self.models[model] = model.evaluate(x_test, y_test)[1]
 
 
 
